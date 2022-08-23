@@ -1,7 +1,7 @@
 {
   "name": "aniside",
   "version": "0.0.1",
-  "private": "true",
+  "private": true,
   "workspaces": [
     "clients/*",
     "servers/*",
@@ -9,5 +9,11 @@
   ],
   "devDependencies": {
     "turbo": "^1.4.3"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   }
 }
