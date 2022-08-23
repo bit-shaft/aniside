@@ -6,5 +6,8 @@
     "clients/*",
     "servers/*",
     "packages/*"
-  ] 
+  ],
+  "devDependencies": {
+    "turbo": "^1.4.3"
+  }
 }
