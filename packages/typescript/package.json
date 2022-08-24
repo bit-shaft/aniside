@@ -1,0 +1,8 @@
+{
+  "name": "@aniside/typescript",
+  "version": "0.0.1",
+  "files": [
+    "base.json",
+    "library.json"
+  ]
+}

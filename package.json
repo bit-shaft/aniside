@@ -8,9 +8,14 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@aniside/typescript": "*",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "@types/node": "^18.7.11",
+    "@typescript-eslint/eslint-plugin": "^5.34.0",
+    "@typescript-eslint/parser": "^5.34.0",
+    "eslint": "^8.22.0",
+    "eslint-config-turbo": "^0.0.3",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "turbo": "^1.4.3",
@@ -19,12 +24,11 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "lint": "eslint --fix --ext .ts,.tsx,.js.,jsx"
   },
   "lint-staged": {
     "*.{ts,tsx,md,mdx,js,jsx}": [
-      "eslint --fix --ext .ts,.tsx,.js.,jsx"
+      "yarn run lint"
     ]
   }
 }
