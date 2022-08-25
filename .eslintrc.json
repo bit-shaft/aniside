@@ -6,10 +6,24 @@
   },
   "extends": [
     "eslint:recommended",
+    "plugin:astro/recommended",
     "plugin:@typescript-eslint/recommended",
     "turbo"
   ],
-  "overrides": [],
+  "overrides": [
+    {
+      "files": [
+        "*.astro"
+      ],
+      "parser": "astro-eslint-parser",
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "extraFileExtensions": [
+          ".astro"
+        ]
+      }
+    }
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
