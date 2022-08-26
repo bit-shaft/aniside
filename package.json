@@ -31,5 +31,6 @@
     "*.{ts,tsx,md,mdx,js,jsx}": [
       "yarn run lint"
     ]
-  }
+  },
+  "packageManager": "yarn@4.0.0-rc.15"
 }
