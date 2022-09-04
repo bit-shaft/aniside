@@ -1,13 +1,14 @@
 import { Stitches } from '@aniside/design'
 
 type DefaultProps = {
-  onClick?: (args: any) => void
   className?: string
+  as?: keyof HTMLElementTagNameMap
   class?: string
-  style?: Stitches.CSS
-  children?: any
-  onChange?: (args: any) => void
+  children?: ChildNode | string,
+  style?: CSSStyleDeclaration
   css?: Stitches.CSS
+  onClick?: (event: Event) => void
+  onChange?: (event: Event) => void
 }
 
 export type { DefaultProps }

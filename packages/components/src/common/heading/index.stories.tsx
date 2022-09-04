@@ -1,21 +1,15 @@
 import { createStory } from '@components/utils'
-import { Text } from '.'
-import { TextProps } from './types'
+import { Heading } from '.'
+import type { HeadingProps } from './types'
 
-export default createStory<TextProps>({
-	title: 'Common/Text',
+export default createStory<HeadingProps>({
+	title: 'Common/Heading',
 	argTypes: {
 		size: {
 			name: 'size',
 			description: 'font size variants',
-			control: { type: 'select', options: ['lg', 'md', 'sm'] as TextProps['size'][] },
+			control: { type: 'select', options: ['lg', 'md', 'sm'] as HeadingProps['size'][] },
 			defaultValue: 'md',
-		},
-		bold: {
-			name: 'bold',
-			description: 'leave the font with negrit styles',
-			control: { type: 'boolean' },
-			defaultValue: false,
 		},
 		italic: {
 			name: 'italic',
@@ -32,8 +26,8 @@ export default createStory<TextProps>({
 	}
 })
 
-const Template = (args: TextProps) => {
-	return <Text {...args} />
+const Template = (args: HeadingProps) => {
+	return <Heading {...args} />
 }
 
 export { Template }

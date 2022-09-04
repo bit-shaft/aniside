@@ -3,14 +3,14 @@ import { stitches } from '@aniside/design'
 const container = stitches.css({
 	variants: {
 		size: {
-			lg: {
-				fontSize: '$16'
+			sm: {
+				fontSize: '$18'
 			},
 			md: {
-				fontSize: '$14'
+				fontSize: '$20'
 			},
-			sm: {
-				fontSize: '$12'
+			lg: {
+				fontSize: '$28'
 			}
 		},
 
@@ -19,12 +19,6 @@ const container = stitches.css({
 				fontStyle: 'italic',
 			}
 		},
-
-		bold: {
-			true: {
-				fontWeight: '$bold',
-			}
-		}
 	},
 
 	defaultVariants: {
