@@ -33,6 +33,7 @@ module.exports = {
 
     config.resolve.alias.push(
       { find: '~', replacement: path.resolve(__dirname, '../src/') },
+      { find: '@components', replacement: path.resolve(__dirname, '../src/') },
     )
 
     return config
