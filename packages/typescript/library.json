@@ -2,13 +2,12 @@
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"extends": "./base.json",
 	"compilerOptions": {
-		"lib": [
-			"ES2015",
-			"DOM"
-		],
-		"module": "ESNext",
-		"target": "ESNext",
-		"jsx": "preserve",
-    "moduleResolution": "Node"
+    "target": "ESNext",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "outDir": "types",
+    "types": ["vite/client"],
+    "emitDeclarationOnly": true
 	}
 }
