@@ -1,22 +1,21 @@
 /** lib exports */
-import { utils, themes, media, getTheme } from './lib'
+import { themes, getTheme, media } from './lib'
 
 const lib = {
-	utils,
-	themes,
-	media,
+	themes, 
 	getTheme,
+	media,
 }
 
 /** base exports */
-import { sizes, fontSizes, fontWeights, radius, spaces } from './base'
+import { sizes, fontSizes, fontWeights, radii, space } from './base'
 
 const base = {
 	sizes,
 	fontSizes,
 	fontWeights,
-	radius,
-	spaces,
+	radii,
+	space,
 }
 
 /** colors exports */

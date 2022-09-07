@@ -1,4 +1,6 @@
-export const spaces = {
+export const space = {
+	4: '0.25rem',
+	8: '0.5rem',
 	16: '1rem',
 	18: '1.125rem',
 	20: '1.25rem',
@@ -9,4 +11,4 @@ export const spaces = {
 	64: '4rem',
 }
 
-export type Spaces = typeof spaces
+export type Spaces = typeof space

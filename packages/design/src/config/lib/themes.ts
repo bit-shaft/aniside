@@ -1,5 +1,5 @@
 import { mainColors, auxColors } from '../colors'
-import { sizes, fontSizes, fontWeights, radius, spaces } from '../base'
+import { sizes, fontSizes, fontWeights, radii, space } from '../base'
 
 export const themes = {
 	ligth: {
@@ -27,8 +27,8 @@ export function getTheme(key: keyof typeof themes) {
 		sizes,
 		fontSizes,
 		fontWeights,
-		radius,
-		spaces,
+		radii,
+		space,
 	}
 }
 

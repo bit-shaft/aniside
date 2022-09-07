@@ -1,6 +1,6 @@
 export const mainColors = {
-	primary: '#0070f3',
-	secondary: '#ff4081',
+	primary: '#36A3FF',
+	secondary: '#FF4545',
 }
 
 export type MainColors = typeof mainColors
