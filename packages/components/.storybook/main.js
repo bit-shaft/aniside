@@ -13,7 +13,7 @@ module.exports = {
     "../src/**/*.stories.mdx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)"
   ],
-
+  
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials"
@@ -21,7 +21,7 @@ module.exports = {
 
   typescript: { reactDocgen: false },
   extends: ['./tsconfig.json'],
-
+  
   viteFinal: async (config, { configType }) => {
     config.plugins = config.plugins || []
 
@@ -32,7 +32,6 @@ module.exports = {
     config.resolve.alias = config.resolve.alias || []
 
     config.resolve.alias.push(
-      { find: '~', replacement: path.resolve(__dirname, '../src/') },
       { find: '@components', replacement: path.resolve(__dirname, '../src/') },
     )
 
