@@ -14,6 +14,7 @@
     "babel-loader": "^8.2.5",
     "i": "^0.3.7",
     "npm": "^8.13.2",
+    "polished": "^4.2.2",
     "storybook-builder-vite": "^0.1.23",
     "tsconfig-paths-webpack-plugin": "^3.5.2",
     "vite": "^2.9.14",
