@@ -1,15 +1,20 @@
 import { TextProps } from './types'
-import * as s from './styles'
+import * as style from './styles'
 import { splitProps } from 'solid-js'
+import { createElement } from '@components/utils'
 
 function Text(props: TextProps) {
+
+	/* ------------------- props manegment ------------------ */
+
 	const [{ ...stitches }, rest] = splitProps(props, ['size', 'bold', 'italic', 'css', 'style'])
 
-	return (
-		<p class={s.container({ ...stitches })} {...rest}>
-			{props.children}
-		</p>
-	)
+	/* ----------------------- render ----------------------- */
+  
+	return createElement<TextProps>(props.as || 'p', {
+		...rest,
+		className: style.container({ ...stitches }),
+	})
 }
 
 export { Text }

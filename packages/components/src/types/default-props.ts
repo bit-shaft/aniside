@@ -4,7 +4,7 @@ type DefaultProps = {
   className?: string
   as?: keyof HTMLElementTagNameMap
   class?: string
-  children?: ChildNode | string,
+  children?: any,
   style?: CSSStyleDeclaration
   css?: Stitches.CSS
   onClick?: (event: Event) => void

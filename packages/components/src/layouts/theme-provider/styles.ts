@@ -2,7 +2,7 @@ import { stitches } from '@aniside/design'
 
 const globalStyles = stitches.globalCss({
 	// eslint-disable-next-line max-len
-	'@import': 'url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap")',
+	'@import': 'url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap")',
 
 	'*': {
 		padding: 0,
