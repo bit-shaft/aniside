@@ -8,7 +8,7 @@ function Wrapper(props: WrapperProps) {
 	/* ------------------- props manegment ------------------ */
 
 	const [{ ...stitches }, rest] =
-    splitProps(props, ['gap', 'justify', 'align', 'container', 'wrap', 'css', 'style'])
+    splitProps(props, ['gap', 'justify', 'direction', 'align', 'container', 'wrap', 'css', 'style'])
 
 	/* ----------------------- render ----------------------- */
 
