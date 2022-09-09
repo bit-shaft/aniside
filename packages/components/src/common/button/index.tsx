@@ -6,7 +6,7 @@ import { createElement } from '@components/utils'
 function Button(props: ButtonProps) {
 
 	/* ------------------- props manegment ------------------ */
-
+    
 	const [{ ...stitches }, rest] =
     splitProps(props, ['size', 'type', 'full', 'variant', 'css', 'style'])
 

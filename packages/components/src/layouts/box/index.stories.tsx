@@ -8,7 +8,7 @@ export default createStory<BoxProps>({
 	title: 'Layouts/Box',
 	argTypes: {
 		flex: {
-			name: 'full',
+			name: 'Flex',
 			description: 'enable flex options',
 			control: { type: 'boolean' },
 			defaultValue: false,
@@ -53,7 +53,7 @@ export default createStory<BoxProps>({
 			},
 		},
 		children: {
-			name: 'text',
+			name: 'Content',
 			description: 'text content',
 			control: { type: 'text' },
 			defaultValue: 'hello test',

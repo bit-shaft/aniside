@@ -11,7 +11,9 @@ function createElement<T extends DefaultProps>(tag: keyof HTMLElementTagNameMap,
 	element.append(...children)
 
 	/* -------------------- adding styles ------------------- */
+
 	element.className = props.className as string
+
 
 	return element
 }
