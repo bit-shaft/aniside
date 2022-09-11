@@ -1,9 +1,9 @@
 import { splitProps } from 'solid-js'
-import { ProfileProps } from './types'
+import { AvatarProps } from './types'
 import * as style from './styles'
 import { Stitches } from '@aniside/design'
 
-function Profile(props: ProfileProps) {
+function Avatar(props: AvatarProps) {
 
 	/* ------------------- props manegment ------------------ */
 
@@ -22,4 +22,4 @@ function Profile(props: ProfileProps) {
 	)
 }
 
-export { Profile }
+export { Avatar }
