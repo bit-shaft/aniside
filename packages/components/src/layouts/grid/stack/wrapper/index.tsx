@@ -1,21 +1,21 @@
 import { splitProps } from 'solid-js'
-import { ItemProps } from './types'
+import { WrapperProps } from './types'
 import * as style from './styles'
 import { createElement } from '@components/utils'
 
-function Item(props: ItemProps) {
+function Wrapper(props: WrapperProps) {
 
 	/* ------------------- props manegment ------------------ */
 
 	const [{ ...stitches }, rest] =
-    splitProps(props, ['gap', 'col', 'row', 'justify', 'align', 'wrap', 'css', 'style'])
+    splitProps(props, ['gap', 'justify', 'direction', 'align', 'container', 'wrap', 'css', 'style'])
 
 	/* ----------------------- render ----------------------- */
 
-	return createElement<ItemProps>(props.as || 'button', {
+	return createElement<WrapperProps>(props.as || 'section', {
 		...rest,
 		className: style.container({ ...stitches }),
 	})
 }
 
-export { Item }
+export { Wrapper }

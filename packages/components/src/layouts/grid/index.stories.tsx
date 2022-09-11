@@ -1,11 +1,11 @@
 import { createStory } from '@components/utils'
-import { SampleGrid } from '.'
+import { Grid } from '.'
 import type { WrapperProps } from './stack'
 
 /* ---------------------- settings ---------------------- */
 
 export default createStory<WrapperProps>({
-	title: 'Layouts/SampleGrid',
+	title: 'Layouts/Grid',
 	argTypes: {
 		flex: {
 			name: 'full',
@@ -67,22 +67,22 @@ export default createStory<WrapperProps>({
 
 const Template = ({ ...args }: WrapperProps) => {
 	return (
-		<SampleGrid.Wrapper
+		<Grid
 			{...args}
 			css={{ padding: '10px', width: '100vw', height: 400,  border: '1px solid red' }}
 		>
-			<SampleGrid.Item align="center">
+			<Grid.Item align="center">
         item 1
-			</SampleGrid.Item>
+			</Grid.Item>
 
-			<SampleGrid.Item align="center">
+			<Grid.Item align="center">
         item 2
-			</SampleGrid.Item>
+			</Grid.Item>
 
-			<SampleGrid.Item align="center">
+			<Grid.Item align="center">
         item 3
-			</SampleGrid.Item>
-		</SampleGrid.Wrapper>
+			</Grid.Item>
+		</Grid>
 	)
 }
 
