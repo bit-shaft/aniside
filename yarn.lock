@@ -1727,7 +1727,7 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@stitches/core@^1.2.6":
+"@stitches/core@^1.2.8":
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/@stitches/core/-/core-1.2.8.tgz#dce3b8fdc764fbc6dbea30c83b73bfb52cf96173"
   integrity sha512-Gfkvwk9o9kE9r9XNBmJRfV8zONvXThnm1tcuojL04Uy5uRyqg93DC83lDebl0rocZCfKSjUv+fWYtMQmEDJldg==
@@ -10574,6 +10574,11 @@ socks@^2.6.2:
     ip "^2.0.0"
     smart-buffer "^4.2.0"
 
+solid-icons@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/solid-icons/-/solid-icons-1.0.1.tgz#2b60bb385a11489369b1d3096199bfccfeeb4399"
+  integrity sha512-9rxPeJ1UDGzWGlksjuXuyK2CdL1vg89inDyOl43koL3zoMgXLzY6LVLuMeuhslHbjq7Fp2h6fSSImj9ygfvleA==
+
 solid-js@^1.4.8:
   version "1.5.1"
   resolved "https://registry.npmjs.org/solid-js/-/solid-js-1.5.1.tgz"
@@ -10589,6 +10594,11 @@ solid-refresh@^0.4.1:
     "@babel/generator" "^7.18.2"
     "@babel/helper-module-imports" "^7.16.7"
     "@babel/types" "^7.18.4"
+
+solidjs-lazily@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/solidjs-lazily/-/solidjs-lazily-0.1.2.tgz#910ae055799dffe20732a0327f4998861477e5ce"
+  integrity sha512-7G86GdNPjjCsgRFBrEVWYyDxKqkMoOjdZafEJJ0fnVGlVf0ziO8cmYufCtgAR2g5ivUVummO3vzgkHDHjBMArw==
 
 source-list-map@^2.0.0:
   version "2.0.1"
