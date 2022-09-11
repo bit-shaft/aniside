@@ -28,7 +28,7 @@
     "lint": "eslint --fix --ext .ts,.tsx,.js.,jsx"
   },
   "lint-staged": {
-    "*.{ts,tsx,md,mdx,js,jsx}": [
+    "*.{ts,tsx,js,jsx}": [
       "yarn run lint"
     ]
   },
