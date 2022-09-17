@@ -1,0 +1,21 @@
+/* ----------------- Packages ----------------- */
+import { Stitches } from '@aniside/design'
+
+/* ----------------- Composers ---------------- */
+import { DefaultProps } from '@components/types'
+import { component_wrapper } from './styles'
+
+/* -------------------------------------------- */
+/* Composed types                               */
+/* -------------------------------------------- */
+
+type ComponentWrapper = Stitches.VariantProps<typeof component_wrapper>
+
+/* -------------------------------------------- */
+/* Final component props                        */
+/* -------------------------------------------- */
+
+type {{ pascalCase name }}Props = DefaultProps & ComponentWrapper & {}
+
+/* ------------------ exports ----------------- */
+export type { {{ pascalCase name }}Props, ComponentWrapper }

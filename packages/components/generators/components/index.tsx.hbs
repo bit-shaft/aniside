@@ -1,0 +1,30 @@
+/* ---------------- Utilitaries --------------- */
+import { handleProps } from '@components/utils'
+
+/* ----------------- Composers ---------------- */
+import * as s from './styles'
+
+/* -------------- Types and Props ------------- */
+import { {{ pascalCase name }}Props, ComponentWrapper } from './types'
+
+function {{ pascalCase name }}({ ...rest }: {{ pascalCase name }}Props) {
+
+	/* -------------------------------------------- */
+	/* Props manegment                              */
+	/* -------------------------------------------- */
+
+	const { element, styles } = handleProps<ComponentWrapper>(rest)
+
+	/* -------------------------------------------- */
+	/* Render                                       */
+	/* -------------------------------------------- */
+  
+	return (
+		<{{ element }} class={s.component_wrapper({ ...styles })} {...element}>
+			{element.children}
+		</{{ element }}>
+	)
+}
+
+/* ------------------ exports ----------------- */
+export { {{ pascalCase name }} }

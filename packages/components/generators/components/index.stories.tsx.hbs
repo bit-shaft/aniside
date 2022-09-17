@@ -1,0 +1,26 @@
+/* ---------------- Utilitaries --------------- */
+import { createStory } from '@components/utils'
+
+/* ----------------- Composers ---------------- */
+import { {{ pascalCase name }} } from '.'
+import type { {{ pascalCase name }}Props  } from './types'
+
+/* -------------------------------------------- */
+/* Story settings                               */
+/* -------------------------------------------- */
+
+export default createStory<{{ pascalCase name }}Props>({
+	title: '{{ pascalCase path }}/{{ pascalCase name }}',
+	argTypes: {},
+})
+
+/* -------------------------------------------- */
+/* Stories Render                               */
+/* -------------------------------------------- */
+
+const Template = (args: {{ pascalCase name }}Props ) => {
+	return <{{ pascalCase name }} {...args} />
+}
+
+/* ------------------ exports ----------------- */
+export { Template }
