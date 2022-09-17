@@ -25,7 +25,13 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "lint": "eslint --fix --ext .ts,.tsx,.js.,jsx"
+    "lint": "eslint --fix --ext .ts,.tsx,.js.,jsx",
+    
+    "add:components": "yarn workspace @aniside/components add",
+    "run:components": "yarn workspace @aniside/components run",
+    "remove:components": "yarn workspace @aniside/components remove",
+    "start:components": "yarn workspace @aniside/components start",
+    "test:components": "yarn workspace @aniside/components test"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
