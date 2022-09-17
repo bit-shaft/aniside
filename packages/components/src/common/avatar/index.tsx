@@ -1,25 +1,30 @@
-import { splitProps } from 'solid-js'
-import { AvatarProps } from './types'
-import * as style from './styles'
-import { Stitches } from '@aniside/design'
+/* ---------------- Utilitaries --------------- */
+import { handleProps } from '@components/utils'
 
-function Avatar(props: AvatarProps) {
+/* ----------------- Composers ---------------- */
+import * as s from './styles'
 
-	/* ------------------- props manegment ------------------ */
+/* -------------- Types and Props ------------- */
+import { AvatarProps, ComponentWrapper } from './types'
 
-	const variants_keys = Object.keys(props)
-		.map((key) => key as keyof Stitches.VariantProps<typeof style.container>)
+function Avatar({ picture, name, ...rest }: AvatarProps) {
 
-	const [{ ...stitches }, rest] = 
-    splitProps(props, [...variants_keys, 'css', 'style', 'picture', 'name'])
+	/* -------------------------------------------- */
+	/* Props manegment                              */
+	/* -------------------------------------------- */
 
-	/* ----------------------- render ----------------------- */
+	const { element, styles } = handleProps<ComponentWrapper>(rest)
 
+	/* -------------------------------------------- */
+	/* Render                                       */
+	/* -------------------------------------------- */
+  
 	return (
-		<div class={style.container({ ...stitches })} {...rest}>
-			<img src={props.picture} alt={props.name} class={style.profile_img()} />
+		<div class={s.component_wrapper({ ...styles })} {...element}>
+			<img loading='lazy' src={picture} alt={name} class={s.profile_img()} />
 		</div>
 	)
 }
 
+/* ------------------ exports ----------------- */
 export { Avatar }

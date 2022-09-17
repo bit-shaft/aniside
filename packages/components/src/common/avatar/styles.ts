@@ -1,11 +1,21 @@
+/* ----------------- Packages ----------------- */
 import { stitches } from '@aniside/design'
+
+/* ---------------- Utilitaries --------------- */
 import { pxToRem } from '@components/utils'
 
-const container = stitches.css({
-	borderRadius: '$round',
-	overflow: 'hidden',
-	border: '2px solid $text',
+/* -------------------------------------------- */
+/* Containers (Wrappers)                        */
+/* -------------------------------------------- */
 
+const component_wrapper = stitches.css({
+	/** Format and sizes */
+	borderRadius: '$round',
+	border: '2px solid $text',
+  
+	/** Behaviours */
+	overflow: 'hidden',
+  
 	variants: {
 		size: {
 			md: {
@@ -19,17 +29,25 @@ const container = stitches.css({
 		},
 	},
 
+	/** Settings */
 	defaultVariants: {
 		size: 'md'
 	}
 })
 
+/* -------------------------------------------- */
+/* Boxes (goes inside Containers)               */
+/* -------------------------------------------- */
+
 const profile_img = stitches.css({
+	/** Format and sizes */
 	height: '100%',
 	width: '100%',
   
+	/** Behaviours */
 	objectFit: 'cover',
 	objectPosition: 'center',
 })
 
-export { container, profile_img }
+/* ------------------ Exports ----------------- */
+export { profile_img, component_wrapper }

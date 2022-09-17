@@ -1,6 +1,13 @@
+/* ---------------- Utilitaries --------------- */
 import { createStory } from '@components/utils'
+
+/* ----------------- Composers ---------------- */
 import { Avatar } from '.'
 import type { AvatarProps  } from './types'
+
+/* -------------------------------------------- */
+/* Story settings                               */
+/* -------------------------------------------- */
 
 export default createStory<AvatarProps  >({
 	title: 'Common/Avatar',
@@ -8,7 +15,7 @@ export default createStory<AvatarProps  >({
 		size: {
 			name: 'size',
 			description: 'font size variants',
-			control: { type: 'select', options: ['lg', 'md'] as AvatarProps ['size'][] },
+			control: { type: 'select', options: ['lg', 'md'] as AvatarProps['size'][] },
 			defaultValue: 'lg',
 		},
 		picture: {
@@ -21,13 +28,13 @@ export default createStory<AvatarProps  >({
 	}
 })
 
+/* -------------------------------------------- */
+/* Stories Render                               */
+/* -------------------------------------------- */
+
 const Template = (args: AvatarProps ) => {
-	return (
-		<Avatar
-			{...args}
-			name="Lu guang"
-		/>
-	)
+	return <Avatar {...args} name="Lu guang"/>
 }
 
+/* ------------------ exports ----------------- */
 export { Template }
